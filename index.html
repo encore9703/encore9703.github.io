@@ -2,9 +2,13 @@
 <html lang="en">
 
     <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/querys.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <title>Encore 9703</title>
@@ -12,16 +16,17 @@
     
     <body>
         
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
-                    <a href="#"><img src="resources/css/images/logo.png" alt="Encore 9703 Logo" class="logo"></a>
+                    <a href="#header"><img src="resources/css/images/logo.png" alt="Encore 9703 Logo" class="logo"></a>
+                    <a href="#header"><img src="resources/css/images/dark_logo.png" alt="Encore 9703 Logo" class="logo-black"></a>
                     <ul class="main-nav">
                         <li>
-                            <a href="#">Who We Are</a>
-                            <a href="#">How It Works</a>
-                            <a href="#">Hours</a>
-                            <a href="#">Contact Us</a>
+                            <a href="#who-we-are">Who We Are</a>
+                            <a href="#how-it-works">How It Works</a>
+                            <a href="#hours">Hours</a>
+                            <a href="#contact-us">Contact Us</a>
                             
                         </li>
                     </ul>
@@ -34,42 +39,102 @@
             </div>
             
             <div class="main-header-button">
-                <a href="#section-new" ><img src="resources/css/images/arrow.svg"></a>   
+                <a class="arrow-button js--scroll-to-start" href="#"><img src="resources/css/images/arrow.svg"></a>   
             </div> 
             
         </header>
         
-        <section id="section-new">
+        <section id="who-we-are" class="js--who-we-are">
             
             <div class="row">
-                <h2 class="news">Latest News</h2>
+                <h2>Who We Are</h2>
             </div>
             
             <div class="row">
             
-                <div class="col span-1-of-4">
-                    <h3>Auction tickets are on sale now!</h3>
-                    <img class="news-image" src="resources/images/auction-logo.JPG">
-                </div>
-                <div class="col span-1-of-4">
-                    <h3>FA vernal pool</h3>
-                    <img class="news-image" src="resources/images/vernal-pool.JPG">
-                </div>
-                <div class="col span-1-of-4">
-                    <h3>Latest edition of the GAM</h3>
-                    <img class="news-image" src="resources/images/Spring-2016-GAM.jpg">
-                </div>
-                <div class="col span-1-of-4">
-                    <h3>Spirit Week!</h3>
-                    <img class="news-image" src="resources/images/news1.jpg">
-                </div>
+                <p class="long-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit massa quis magna fermentum sollicitudin. Vestibulum sodales lacus neque. Vestibulum nisi dui, blandit at venenatis ac, aliquam quis massa. Integer eget urna id augue accumsan vehicula. Vivamus imperdiet posuere sem, quis elementum risus. Fusce maximus ullamcorper urna vel mollis. Morbi eleifend magna eget lacinia viverra. Aliquam convallis massa eget metus rutrum, non lacinia sem facilisis. Vestibulum mi diam, cursus ut interdum dictum, consectetur non enim. Pellentesque blandit, metus eget vestibulum facilisis, libero leo dapibus tellus, placerat suscipit neque erat pretium sem.</p>
+                <br>                
+                <p>Nulla maximus sapien vitae ante pellentesque, ut elementum arcu dapibus. Etiam posuere nulla at ex ultricies finibus. Proin maximus, nibh vel auctor tincidunt, libero orci varius leo, at rhoncus quam purus gravida velit. Etiam pulvinar auctor odio a lacinia. Integer sit amet ex a orci volutpat tincidunt. Nullam laoreet, justo vel molestie pulvinar, ex sem aliquam nisl, quis vulputate enim tellus in neque. Pellentesque fermentum sagittis tortor. Integer tellus urna, lobortis at hendrerit ac, accumsan vel diam. Donec in finibus ex.</p>
             
             </div>
                         
         </section>
         
-        <script src="resources/js/dropdown.js"></script>
+        <section id="how-it-works" class="js--how-it-works">
+            
+            <div class="row">
+                <h2>How It Works</h2>
+            </div>
+            
+            <div class="row">
+            
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit massa quis magna fermentum sollicitudin. Vestibulum sodales lacus neque. Vestibulum nisi dui, blandit at venenatis ac, aliquam quis massa. Integer eget urna id augue accumsan vehicula. Vivamus imperdiet posuere sem, quis elementum risus. Fusce maximus ullamcorper urna vel mollis. Morbi eleifend magna eget lacinia viverra. Aliquam convallis massa eget metus rutrum, non lacinia sem facilisis. Vestibulum mi diam, cursus ut interdum dictum, consectetur non enim. Pellentesque blandit, metus eget vestibulum facilisis, libero leo dapibus tellus, placerat suscipit neque erat pretium sem.</p>
+                <br>                
+                <p>Nulla maximus sapien vitae ante pellentesque, ut elementum arcu dapibus. Etiam posuere nulla at ex ultricies finibus. Proin maximus, nibh vel auctor tincidunt, libero orci varius leo, at rhoncus quam purus gravida velit. Etiam pulvinar auctor odio a lacinia. Integer sit amet ex a orci volutpat tincidunt. Nullam laoreet, justo vel molestie pulvinar, ex sem aliquam nisl, quis vulputate enim tellus in neque. Pellentesque fermentum sagittis tortor. Integer tellus urna, lobortis at hendrerit ac, accumsan vel diam. Donec in finibus ex.</p>
+            
+            </div>
+                        
+        </section>
         
+        <section id="hours" class="js--hours">
+            
+            <div class="row">
+                <h2>Hours</h2>
+            </div>
+            
+            <div class="row">
+            
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit massa quis magna fermentum sollicitudin. Vestibulum sodales lacus neque. Vestibulum nisi dui, blandit at venenatis ac, aliquam quis massa. Integer eget urna id augue accumsan vehicula. Vivamus imperdiet posuere sem, quis elementum risus. Fusce maximus ullamcorper urna vel mollis. Morbi eleifend magna eget lacinia viverra. Aliquam convallis massa eget metus rutrum, non lacinia sem facilisis. Vestibulum mi diam, cursus ut interdum dictum, consectetur non enim. Pellentesque blandit, metus eget vestibulum facilisis, libero leo dapibus tellus, placerat suscipit neque erat pretium sem.</p>
+                <br>                
+                <p>Nulla maximus sapien vitae ante pellentesque, ut elementum arcu dapibus. Etiam posuere nulla at ex ultricies finibus. Proin maximus, nibh vel auctor tincidunt, libero orci varius leo, at rhoncus quam purus gravida velit. Etiam pulvinar auctor odio a lacinia. Integer sit amet ex a orci volutpat tincidunt. Nullam laoreet, justo vel molestie pulvinar, ex sem aliquam nisl, quis vulputate enim tellus in neque. Pellentesque fermentum sagittis tortor. Integer tellus urna, lobortis at hendrerit ac, accumsan vel diam. Donec in finibus ex.</p>
+            
+            </div>
+                        
+        </section>
+        
+        <section id="contact-us" class="js--contact-us">
+            
+            <div class="row">
+                <h2>Contact Us</h2>
+            </div>
+            
+            <div class="row">
+            
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit massa quis magna fermentum sollicitudin. Vestibulum sodales lacus neque. Vestibulum nisi dui, blandit at venenatis ac, aliquam quis massa. Integer eget urna id augue accumsan vehicula. Vivamus imperdiet posuere sem, quis elementum risus. Fusce maximus ullamcorper urna vel mollis. Morbi eleifend magna eget lacinia viverra. Aliquam convallis massa eget metus rutrum, non lacinia sem facilisis. Vestibulum mi diam, cursus ut interdum dictum, consectetur non enim. Pellentesque blandit, metus eget vestibulum facilisis, libero leo dapibus tellus, placerat suscipit neque erat pretium sem.</p>
+                <br>                
+                <p>Nulla maximus sapien vitae ante pellentesque, ut elementum arcu dapibus. Etiam posuere nulla at ex ultricies finibus. Proin maximus, nibh vel auctor tincidunt, libero orci varius leo, at rhoncus quam purus gravida velit. Etiam pulvinar auctor odio a lacinia. Integer sit amet ex a orci volutpat tincidunt. Nullam laoreet, justo vel molestie pulvinar, ex sem aliquam nisl, quis vulputate enim tellus in neque. Pellentesque fermentum sagittis tortor. Integer tellus urna, lobortis at hendrerit ac, accumsan vel diam. Donec in finibus ex.</p>
+            
+            </div>
+                        
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span 1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#who-we-are">Who We Are</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#hours">Hours</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col span 1-of-2">
+                    <ul class="social-icons">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2016 by Encore 9703. All Rights Reserved.</p>
+            </div>
+        
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="resources/js/scripts.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+                
     </body>
+
     
 </html>
