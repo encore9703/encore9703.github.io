@@ -96,6 +96,27 @@ header h2{
     font-size: 100%;
 }
 
+.announcement{
+    background-color: #ffc631;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.announce{
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    font-size: 175%;
+    padding: 15px;
+}
+
+.announce-h2{
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    font-size: 125%;
+}
+
 /* ARROW BUTTON */
 
 .main-header-button {
