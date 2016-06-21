@@ -99,7 +99,7 @@ header h2{
 .announcement{
     background-color: #ffc631;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .announce{
@@ -299,16 +299,29 @@ section p{
     text-align: center;
 }
 
+.brands-list li:after{
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    content: "";
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 #brands-1{
     float: left;
-    margin-left: 75px;
+    margin-left: 175px;
     margin-top: 30px;
+    color: #fff;
 }
 
 #brands-2{
     float: right;
-    margin-right: 75px;
+    margin-right: 175px;
     margin-top: 30px;
+    color: #fff;
 }
 
 /* HOW IT WORKS COLUMNS */
@@ -437,4 +450,51 @@ footer p{
 #map {
     width: 100%;
     height: 500px;
+}
+
+/* IMAGES */
+.brand-image{
+    margin-top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/scarves.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 625px;
+}
+
+.how-image{
+    margin-top: 30px;
+    background-image: url(images/mirror.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 625px;
+}
+
+.hours-image{
+    margin-top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/mirror.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+.hours-image li{
+    color: #fff;
+}
+
+.hours-image ul{
+    padding-top: 85px;
+}
+
+.hours-image li:after{
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    content: "";
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
