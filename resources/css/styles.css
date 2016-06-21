@@ -318,6 +318,24 @@ h4{
     margin-bottom: 10px;
 }
 
+/* CONTACT */
+
+.contact p{
+    font-weight: 300;
+    font-size: 100%;
+    text-align: center;
+}
+
+#con-head{
+    font-weight: 400;
+    font-size: 120%;
+    margin-top: 150px;
+}
+
+.phone{
+    color: #b18000;
+}
+
 /* ---------------------------------------------------------------------------------------- */
 /* FOOTER */
 /* ---------------------------------------------------------------------------------------- */
@@ -335,10 +353,16 @@ footer p{
     margin-top: 30px;
 }
 
+.footer-contact li{
+    border: 0px;
+    font-size: 65%;
+    font-weight: 300;
+}
+
 .footer-nav li a:link,
 .footer-nav li a:visited,
-.social-icons li a:link,
-.social-icons li a:visited{
+.footer-contact li a:link,
+.footer-contact li a:visited{
     text-decoration: none;
     border: 0px;
     color: #888;
@@ -355,9 +379,9 @@ footer p{
     color: #ddd;
 }
 
-.social-icons li a:hover,
-.social-icons li a:active{
-    color: #ffc631;
+.footer-contact li a:hover,
+.footer-contact li a:active{
+    color: #ddd;
 }
 
 .footer-nav{
@@ -365,17 +389,31 @@ footer p{
     float: left;
 }   
 
-.social-icons{
+.footer-contact{
     list-style: none;
     float: right;
 }
 
 .footer-nav li,
-.social-icons li {
+.footer-contact li {
     display: inline-block;
     margin-right: 20px;
 }
 .footer-nav li:last-child,
-.social-icons li:last-child {
+.footer-contact li:last-child {
     margin-right: 0px;
+}
+
+#footer-address{
+    color: #888;
+}
+
+#footer-phone{
+    color: #b18000;
+}
+
+/* MAPS */
+#map {
+    width: 100%;
+    height: 500px;
 }
