@@ -195,6 +195,10 @@
     #foot-con{
         padding-right: 22%;
     }
+    
+    #map{
+        pointer-events: none;
+    }
 }
 
 /*Small phones*/
@@ -316,6 +320,10 @@
     
     .icon-big{
         font-size: 150%;
+    }
+    
+    #map{
+        pointer-events: none;
     }
 }
 
