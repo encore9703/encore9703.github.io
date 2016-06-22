@@ -4,8 +4,12 @@ $(document).ready(function () {
     $('.js--who-we-are').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
+            $('hero').addClass('gone');
+            $('button').addClass('gone');
         } else {
             $('nav').removeClass('sticky');
+            $('hero').removeClass('gone');
+            $('button').removeClass('gone');
         }
     }, {
         offset: '60px;'
