@@ -247,8 +247,13 @@
         font-size: 95%;
     }
     
+    #foot-con{
+        margin-left: 0px;
+    }
+    
+    .footer-nav li:last-child,
     .footer-contact li:last-child {
-        margin-right: 2px;
+        margin-right: 0px;
     }
     
     .contact{
