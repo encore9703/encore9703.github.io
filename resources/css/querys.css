@@ -16,6 +16,12 @@
     #brands-2{
         margin-right: 15px;
     }
+    
+    .footer-nav li,
+    .footer-contact li {
+        display: inline-block;
+        margin-right: 10px;
+    }
         
 }
 
@@ -62,6 +68,16 @@
         margin-top: 25px;
     }   
     
+    .footer-nav li,
+    .footer-contact li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    
+    .how-image{
+        height: 400px;
+    }
 }
 
 /*Larger phones*/
