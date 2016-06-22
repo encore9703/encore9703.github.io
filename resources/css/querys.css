@@ -59,7 +59,7 @@
 /*Larger phones*/
 @media only screen and (max-width: 767px){
     body{
-        font-size: 27px;
+        font-size: 23px;
     }
     
     section{
@@ -67,11 +67,15 @@
     }
     
     #brands-1{
-        margin-left: 15px;
+        margin-left: 5px;
+        font-size: 60%;
+        width: 40%;
     }
     
     #brands-2{
-        margin-right: 15px;
+        margin-right: 5px;
+        font-size: 60%;
+        width: 40%;
     }
     
     .row{ padding: 0 4%;
@@ -84,6 +88,11 @@
         float: left;
         margin-top: 20px;
     }
+    
+    .sticky .main-nav{
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
 
     .logo-black{
         display: none;
@@ -91,12 +100,56 @@
         width: auto;
         float: left;
         padding-top: 3px;
-        margin: 5px 0;
+        margin: 0px 0;
     }
     
     .main-nav{
         margin-top: 25px;
     }   
+    
+    .main-nav li{
+        margin-left: 0px;
+    }
+
+    .main-nav li a{
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 60%;
+    }
+    
+    .brand-image{
+        height: 415px;
+    }
+    
+    .col{
+        width: 100%;
+    }
+    
+    #community{
+        margin-left: 0px;
+    }
+    
+    #consign{
+        margin-left: 0px;
+    }
+    
+    .footer-nav li,
+    .footer-contact li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-contact li:last-child {
+        margin-right: 35px;
+    }
+    
+    .contact{
+        margin-left: 0px;
+    }
+    
+    #con-head{
+        margin-top: 15px;
+    }
 }
 
 /*Small phones*/
