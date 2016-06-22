@@ -22,10 +22,37 @@
         padding: 60px 0;
     }
     
-}
+    #brands-1{
+        margin-left: 15px;
+    }
+    
+    #brands-2{
+        margin-right: 15px;
+    }
+    
+    .row{ padding: 0 4%;
+    
+    }
+    
+    .logo{
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-top: 20px;
+    }
 
-/*Tablets in portrait*/
-@media only screen and (max-width: 1023px){
+    .logo-black{
+        display: none;
+        height: 50px;
+        width: auto;
+        float: left;
+        padding-top: 3px;
+        margin: 5px 0;
+    }
+    
+    .main-nav{
+        margin-top: 25px;
+    }   
     
 }
 
