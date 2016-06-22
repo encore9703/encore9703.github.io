@@ -18,6 +18,10 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+div {
+  box-sizing: border-box;
+  }
+
 /* ---------------------------------------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ---------------------------------------------------------------------------------------- */
@@ -54,6 +58,7 @@ header{
 		position: fixed;
 		top: 0;
 		width: 100%;
+        box-sizing: border-box;
 		z-index: 10000;
 }
 
@@ -201,6 +206,7 @@ header h2{
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     background-color: rgba(56, 56, 56, 0.98);
     box-shadow: 0  2px 2px #c1c1c1;
     z-index: 9999;
@@ -265,6 +271,7 @@ section h3{
     padding: 10px;
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
     min-height: 80px;
 }
 
@@ -459,6 +466,7 @@ footer p{
     background-size: cover;
     background-position: center;
     width: 100%;
+    box-sizing: border-box;
     height: 625px;
 }
 
@@ -468,6 +476,7 @@ footer p{
     background-size: cover;
     background-position: center;
     width: 100%;
+    box-sizing: border-box;
     height: 625px;
 }
 
@@ -477,6 +486,7 @@ footer p{
     background-size: cover;
     background-position: center;
     width: 100%;
+    box-sizing: border-box;
     height: 400px;
 }
 
