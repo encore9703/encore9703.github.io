@@ -9,6 +9,13 @@
     
     .row{ padding: 0 2%; }
     
+    #brands-1{
+        margin-left: 15px;
+    }
+    
+    #brands-2{
+        margin-right: 15px;
+    }
         
 }
 
