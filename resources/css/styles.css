@@ -457,6 +457,7 @@ footer p{
 #map {
     width: 100%;
     height: 500px;
+    pointer-events: none;
 }
 
 /* IMAGES */
