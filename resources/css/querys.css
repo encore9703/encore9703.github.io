@@ -150,10 +150,117 @@
     #con-head{
         margin-top: 15px;
     }
+    
+    .icon-big{
+        font-size: 175%;
+    }
 }
 
 /*Small phones*/
 @media only screen and (max-width: 480px){
+    body{
+        font-size: 21px;
+    }
     
+    section{
+        padding: 60px 0;
+    }
+    
+    #brands-1{
+        margin-left: 5px;
+        font-size: 60%;
+        width: 40%;
+    }
+    
+    #brands-2{
+        margin-right: 5px;
+        font-size: 60%;
+        width: 40%;
+    }
+    
+    .row{ padding: 0 4%;
+    
+    }
+    
+    .logo{
+        height: 30px;
+        width: 30px;
+        float: left;
+        margin-top: 20px;
+    }
+    
+    .sticky .main-nav{
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+
+    .logo-black{
+        display: none;
+        height: 30px;
+        width: auto;
+        float: left;
+        padding-top: 3px;
+        margin: 6px 0;
+    }
+    
+    .main-nav{
+        margin-top: 17px;
+    }   
+    
+    .main-nav li{
+        margin-left: 0px;
+    }
+
+    .main-nav li a{
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 60%;
+    }
+    
+    .brand-image{
+        height: 415px;
+    }
+    
+    .how-image{
+        height: 300px;
+    }
+    
+    .col{
+        width: 100%;
+    }
+    
+    #community{
+        margin-left: 0px;
+    }
+    
+    #consign{
+        margin-left: 0px;
+    }
+    
+    .footer-nav li,
+    .footer-contact li {
+        display: inline-block;
+        margin-right: 2px;
+    }
+    
+    .footer-nav li{
+        font-size: 95%;
+    }
+    
+    .footer-contact li:last-child {
+        margin-right: 2px;
+    }
+    
+    .contact{
+        margin-left: 0px;
+    }
+    
+    #con-head{
+        margin-top: 15px;
+    }
+    
+    .icon-big{
+        font-size: 150%;
+    }
 }
 
