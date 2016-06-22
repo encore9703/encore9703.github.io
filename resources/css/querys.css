@@ -141,6 +141,7 @@
     #consign{
         margin-left: 0px;
     }
+
     
     .footer-nav li,
     .footer-contact li {
@@ -149,7 +150,7 @@
     }
     
     .footer-contact li:last-child {
-        margin-right: 35px;
+        margin-right: 0px;
     }
     
     .contact{
@@ -166,6 +167,10 @@
     
     html,body{
         overflow-x: hidden;
+    }
+    
+    #foot-con{
+        padding-right: 22%;
     }
 }
 
