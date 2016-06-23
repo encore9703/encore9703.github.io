@@ -505,3 +505,12 @@ footer p{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+#greg{
+    text-decoration: none;
+    color: #b18000;
+}
+
+#greg:hover{
+    color:#fff;
+}
