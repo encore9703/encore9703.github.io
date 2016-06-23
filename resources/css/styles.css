@@ -40,7 +40,7 @@ section{
 /* ---------------------------------------------------------------------------------------- */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/shoot/encore-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-1.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -462,7 +462,7 @@ footer p{
 /* IMAGES */
 .brand-image{
     margin-top: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/shoot/encore-9.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-9.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -479,7 +479,7 @@ footer p{
 
 .hours-image{
     margin-top: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(images/shoot/encore-6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(images/encore-6.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
