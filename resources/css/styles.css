@@ -491,6 +491,11 @@ footer p{
     color: #fff;
 }
 
+.hours-image a{
+    text-decoration: none;
+    color: #ffc631;
+}
+
 .hours-image h3{
     margin-top: 100px;
 }
@@ -502,7 +507,7 @@ footer p{
     content: "";
     width: 350px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 15px;
 }
 
