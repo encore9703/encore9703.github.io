@@ -122,6 +122,20 @@ header h2{
     font-size: 90%;
 }
 
+.announcement a{
+    text-decoration: none;
+    color: #383838;
+    -moz-transition: color .2s;
+    -webkit-transition: color .2s;
+    -ms-transition: color .2s;
+    transition: color .2s;
+}
+
+.announcement a:hover,
+.announcement a:active{
+    color: #fff;
+}
+
 /* ARROW BUTTON */
 
 .main-header-button {
