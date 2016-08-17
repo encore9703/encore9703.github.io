@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     /* Sticky Navigation */
-    $('.js--who-we-are').waypoint(function (direction) {
+    $('.js--promotions').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
             $('hero').addClass('gone');
