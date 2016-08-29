@@ -558,6 +558,21 @@ footer p{
 #greg:hover{
     color:#fff;
 }
+
+.contact{
+    text-align: center;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #b18000;
+    
+}
+
+.contact a:hover{
+    color:#383838;
+}
+
 .call-link {
     text-decoration: none;
     color: #ffc631;
