@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
+    <!-- Main website page. Includes an "About Us" section, an "Hours" section, a "Contact Us" section, and a link to the online collection.
+         Uses the fluid grid, normalize, and ionicons css sources for some designs.
+         Uses javascript scripts to provide smooth navigation with the navigation bar.
+         Uses Google Maps api to provide the map for the contact us section. -->
+    
     <head>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Upscale women's consignment store with new and gently used clothing, shoes, handbags, and accessories from designer name brands">
         
+        <!-- Icon font -->
         <script src="https://use.fontawesome.com/d6dc66417a.js"></script>  
         
+        <!-- Required css files -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -16,11 +23,15 @@
         <link rel="stylesheet" type="text/css" href="resources/css/indexphotogrid.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        
+        <!-- Title -->
         <title>Encore 9703</title>
+        
     </head>
     
     <body>
         
+        <!-- Main header with logo and navigation bar -->
         <header id="header">
             <nav>
                 <div class="row">
@@ -38,23 +49,27 @@
                 </div>
             </nav>
             
-            <div class="announcement">
+            <!-- Optional announcement banner at the top -->
+            <!-- <div class="announcement">
                 <h1 class="announce">End of Summer Clearance: August 15 &#45; September 1</h1>
                 <h2 class="announce-h2"><a href="#promotions">Click to learn more</a></h2>
-            </div>
+            </div> -->
         
+            <!-- Main text box with header and sub-header -->
             <div class="hero-text-box">
                 <h1 class="main-header">Encore 9703</h1>
                 <h2 class="main-sub-header">Upscale Women's Consignment Store</h2>
             </div>
             
+            <!-- Header arrow button -->
             <div class="main-header-button">
                 <a class="arrow-button js--scroll-to-start" href="#"><img src="resources/css/images/arrow.svg"></a>   
             </div> 
             
         </header>
         
-        <section id="promotions" class="js--promotions">
+        <!-- Optional Promotions section for sales or events -->
+        <!-- <section id="promotions" class="js--promotions">
             <div class="row">
                 <h2>End of Summer Clearance Event</h2>
                 
@@ -72,18 +87,22 @@
                 </ul>
             </div>
         
-        </section>
+        </section> -->
         
+        <!-- Who We Are section -->
         <section id="who-we-are" class="js--who-we-are">
             
+            <!-- Section title -->
             <div class="row">
                 <h2>About Us</h2>
             </div>
             
+            <!-- Section sub-header -->
             <div class="row">
                 <h3 class="long-copy">Welcome to a world where everyone can dress in style at a reasonable price</h3>
             </div>
             
+            <!-- Paragraph of text -->
             <div class="row">
             
                 <p>We carry new and gently used clothing, shoes, handbags, and accessories from designer name brands. Find styles and colors that will not only reflect your personality but your own fashion sense as you peruse our selection. Prada, Burberry, Tahari, and Mulberry are some of the high end fashion labels that are seen regularly in this little store. Lots of ongoing sales and automatic markdowns are available, resulting in steals that are scarce amid such a high end stock!</p>
@@ -94,7 +113,10 @@
 
             </div>
             
+            <!-- Image displaying some of the brands carried in the store in two columns -->
             <div class="brand-image">
+                
+                <!-- First column -->
                 <div class="col span 1-of-2 brands-list" id="brands-1">
                     <ul>
                         <li>Calvin Klein</li>
@@ -107,6 +129,7 @@
                     </ul>
                 </div>
                 
+                <!-- Second column -->
                 <div class="col span 1-of-2 brands-list" id="brands-2">
                     <ul>    
                         <li>Lucky</li>
@@ -120,42 +143,68 @@
                 </div>
             </div>
             
-            
+            <!-- Three columns with icons and decriptions to explain how the store works -->
             <div class="row">
             
+                <!-- First column -->
                 <div class="col span-1-of-3 box" id="consult">
+                    
+                    <!-- Icon -->
                     <i class="ion-ios-cart-outline icon-big" aria-hidden="true"></i>
+                    
+                    <!-- Title -->
                     <h4>Fashion Consulting</h4>
+                    
+                    <!-- Description -->
                     <p class="column-p">Take your shopping to the next level with one of our skilled fashion consultants! Make an appointment for a personalized experience where we help you find the best clothes and accessories to fit your style. </p>
                 </div>
                 
+                <!-- Second Column -->
                 <div class="col span-1-of-3 box" id="community">
+                    
+                    <!-- Icon -->
                     <i class="ion-ios-home-outline icon-big" aria-hidden="true"></i>
+                    
+                    <!-- Title -->
                     <h4>Women 4 Women</h4>
+                    
+                    <!-- Description -->
                     <p class="column-p">Be a part of the shopping experience that helps women get a second chance: a portion of all proceeds go back to the community, helping women shelters bring women back into the workforce! </p>
                 </div>
                 
+                <!-- Third Column -->
                 <div class="col span-1-of-3 box" id="consign">
+                    
+                    <!-- Icon -->
                     <i class="ion-ios-pricetags-outline icon-big" aria-hidden="true"></i>
+                    
+                    <!-- Title -->
                     <h4>Consignment</h4>
+                    
+                    <!-- Description -->
                     <p class="column-p">Bring in your clothing, shoes, handbags, and accessories that no longer suit your style and we can get you started with your own business account. Make an appointment to jump into your new consigning venture!</p>
                 </div>
             
             </div>
             
+            <!-- Section explaining private parties -->
+            
+            <!-- Title -->
             <div class="row">
                 <h3 class="long-copy">Private parties</h3>
             </div>
             
+            <!-- Description -->
             <div class="row">
             
                 <p>Book a private party for a personalized shopping experience with friends and family! All guests recieve 5% off their entire purchase and you receive 15% off. We provide refreshments.</p>
                 <br>
-                <p><a class="call-link" href="#contact-us">Call</a> and book your party today!</p>
+                <p><a class="call-link" href="#contact-us">Call</a> and book your party today!</p> <!-- Link to the contact section -->
                 <br>    
 
             </div>
             
+            <!-- Grid of images -->
             <div class="row">
                 <ul id="rig">
                     <li>
@@ -205,12 +254,14 @@
                         
         </section>
         
+        <!-- Button that leads to the online collection page -->
         <section>
             <div class="row button">
                 <a href="products.html">Browse Our Selection</a>
             </div>
         </section>
         
+        <!-- Second grid of images -->
         <section>
             <div class="row">
                 <ul id="rig">
@@ -259,32 +310,39 @@
             </div>
         </section>
         
+        <!-- Hours section -->
         <section id="hours" class="js--hours">
             
+            <!-- Section title -->
             <div class="row">
                 <h2>Hours</h2>
             </div>
             
+            <!-- Background image and list of hours -->
             <div class="row hours-image">
                 <h3>Regular Business Hours</h3>
                 <ul>
                     <li>Monday - Thursday: 1 &#45; 7 PM</li>
                     <li>Friday: 3:30 &#45; 8 PM</li>
                     <li>Saturday: 3:30 &#45; 8 PM</li>
-                    <li>Sunday: <a href="#contact-us">Call</a> for appointment</li>
+                    <li>Sunday: <a href="#contact-us">Call</a> for appointment</li> <!-- Link to contact section -->
                 </ul>
             </div>
                         
         </section>
         
+        <!-- Contact Section -->
         <section id="contact-us" class="js--contact-us">
             
+            <!-- Section title -->
             <div class="row">
                 <h2>Contact Us</h2>
             </div>
             
+            <!-- Section content -->
             <div class="row">
                 
+                <!-- First column with google map centered on store -->
                 <div class="col span-1-of-2">
                     <div id="map"></div>
                     <script>
@@ -306,20 +364,24 @@
                     </script>
                 </div>
                 
+                <!-- Second column with contact information -->
                 <div class="col span-1-of-2 contact">
                     <p id="con-head">681 Falmouth Rd, Unit A&#45;12</p>
                     <p>Mashpee, MA 02649</p>
                     <br>
                     <p class="phone">(508) 340-1068</p>
                     <br>
-                    <a target="_blank" href="https://www.facebook.com/encore9703">Find us on Facebook</a>
+                    <a target="_blank" href="https://www.facebook.com/encore9703">Find us on Facebook</a> <!-- Link to the Facebook page -->
                 </div>
             
             </div>
             
         </section>
         
+        <!-- Footer -->
         <footer>
+            
+            <!-- Footer navigation -->
             <div class="row">
                 <div class="col span-1-of-2" id="foot-nav">
                     <ul class="footer-nav">
@@ -336,15 +398,20 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- Footer copyright information -->
             <div class="row">
                 <p>Copyright &copy; 2016 by Encore 9703. All Rights Reserved.</p>
             </div>
+            
+            <!-- Created by section -->
             <div class="row">
                 <p>Website created by <a id="greg" href="http://www.gregpickart.xyz" target="_blank">Greg Pickart</a></p>
             </div>
         
         </footer>
         
+        <!-- Required javascript scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="resources/js/scripts.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>

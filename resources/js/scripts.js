@@ -35,6 +35,7 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $('.js--who-we-are').offset().top}, 1000);
     });
     
+    /* Scroll */
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -48,7 +49,7 @@ $(document).ready(function () {
         });
     });
     
-    // Get the modal
+    /* Modal */
     var modal = document.getElementById('myModal');
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption

@@ -20,7 +20,17 @@ html{
 
 div {
   box-sizing: border-box;
-  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* BASIC COLOR GUIDLINES */
+/* ---------------------------------------------------------------------------------------- */
+
+/* 
+   Main text: #383838
+   Lighter yellow color for links and headers: #ffc631
+   Darker yellow color for subheaders: #b18000
+*/
 
 /* ---------------------------------------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -46,8 +56,9 @@ header{
     background-position: center;
 }
 
+/* Smaller header, not in use */
 
-.small-header{
+/* .small-header{
         -moz-transition: background-color 0.2s ease;
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
@@ -61,7 +72,9 @@ header{
 		width: 100%;
         box-sizing: border-box;
 		z-index: 10000;
-}
+} */
+
+/* Main header text box */
 
 .hero-text-box{
     position: absolute;
@@ -72,9 +85,13 @@ header{
     font-size: 75%;
 }
 
+/* Main header text box text */
+
 .main-header{
     font-size: 400%;
 }
+
+/* Header h1 */
 
 header h1{
     margin: 0;
@@ -84,6 +101,8 @@ header h1{
     word-spacing: 2px;
 }
 
+/* Header h2 */
+
 header h2{
     margin: 0;
     padding-left: 6px;
@@ -91,10 +110,14 @@ header h2{
     word-spacing: 2px;
 }
 
+/*Main header image */
+
 .main-image {
     float: left;
     width: 25%;
 }
+
+/* Sub header underneath the main text box */
 
 .main-sub-header {
     color: #fff;
@@ -102,11 +125,19 @@ header h2{
     font-size: 100%;
 }
 
+/* ---------------------------------------------------------------------------------------- */
+/* ANNOUNCEMENT */
+/* ---------------------------------------------------------------------------------------- */
+
+/*Background for the announcement */
+
 .announcement{
     background-color: #ffc631;
     padding: 15px;
     margin-top: 10px;
 }
+
+/* Main text for the announcement */
 
 .announce{
     text-align: center;
@@ -116,12 +147,16 @@ header h2{
     padding: 15px;
 }
 
+/* Sub-header text for the announcement */
+
 .announce-h2{
     text-align: center;
     color: #383838;
     font-weight: 300;
     font-size: 90%;
 }
+
+/* Link text for the announcement */
 
 .announcement a{
     text-decoration: none;
@@ -132,12 +167,16 @@ header h2{
     transition: color .2s;
 }
 
+/* Handles the color-change animation for the link */
+
 .announcement a:hover,
 .announcement a:active{
     color: #fff;
 }
 
+/* ---------------------------------------------------------------------------------------- */
 /* ARROW BUTTON */
+/* ---------------------------------------------------------------------------------------- */
 
 .main-header-button {
     background-position: center;
@@ -157,11 +196,17 @@ header h2{
     transition: transform .2s;
 }
 
+/* Handles the hover animation for the arrow button */
+
 .main-header-button:hover {
     transform: scale(1.125);
 }
 
-/* MAIN LOGO AND NAV */
+/* ---------------------------------------------------------------------------------------- */
+/* MAIN LOGO AND NAVIGATION */
+/* ---------------------------------------------------------------------------------------- */
+
+/* Header logo, white */
 
 .logo{
     height: 100px;
@@ -169,6 +214,8 @@ header h2{
     float: left;
     margin-top: 20px;
 }
+
+/* Black logo option */ 
 
 .logo-black{
     display: none;
@@ -180,17 +227,22 @@ header h2{
 }
 
 
-/*Main*/
+/* Main Navigation Bar */
+
 .main-nav{
     float: right;
     list-style: none;
     margin-top: 45px;
 }
 
+/* List for the main navigation bar */
+
 .main-nav li{
     display:inline-block;
     margin-left: 40px;
 }
+
+/* Link styles for the main navigation bar */
 
 .main-nav li a{
     padding-right: 20px;
@@ -206,16 +258,25 @@ header h2{
     transition: color .2s;
 }
 
+/*Handles the hover animations for the main navigation bar links */
+
 .main-nav li a:hover,
 .main-nav li a:active{
     color: #ffc631;
 }
 
+/* Possible style for a search icon */
+
 #search-nav {
     color: #fff;
 }
 
-/*Sticky*/
+/* ---------------------------------------------------------------------------------------- */
+/* STICKY NAVIGATION */
+/* ---------------------------------------------------------------------------------------- */
+
+/* Sticky Navigation Bar for when the user scrolls down the page */
+
 .sticky{
     position: fixed;
     top: 0;
@@ -227,12 +288,16 @@ header h2{
     z-index: 9999;
 }
 
+/* Sticky navigation bar main navigation */
+
 .sticky .main-nav{
     float: right;
     list-style: none;
     margin-top: 8px;
     margin-bottom: 15px;
 }
+
+/* Sticky navigation link styles */
 
 .sticky .main-nav li a{
     color: #ffc631;
@@ -242,10 +307,14 @@ header h2{
     transition: color .2s;
 }
 
+/* Handles the hover animations for the sticky navigation links */
+
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active{
     color: #fff;
 }
+
+/* Sticky navigation logos */
 
 .sticky .logo-black{
     display: block;
@@ -258,7 +327,8 @@ header h2{
 /* SECTIONS */
 /* ---------------------------------------------------------------------------------------- */
 
-/* HEADERS */
+/* Header styles */
+
 section h2 {
     color: #383838;
     font-weight: 300;
@@ -271,16 +341,6 @@ section h2:after{
     display: block;
     height: 2px;
     background-color: #ffc631;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-#promotions h2:after{
-    display: block;
-    height: 2px;
-    background-color: #383838;
     content: "";
     width: 100px;
     margin: 0 auto;
@@ -314,6 +374,8 @@ section h4{
     min-height: 80px;
 }
 
+/* Section list styles */
+
 section li{
     list-style: none;
     line-height: 175%;
@@ -331,7 +393,7 @@ section li{
     margin-bottom: 15px;
 }
 
-/* PARAGRAPHS */
+/* Section paragraph styles */
 .long-copy{
     line-height: 145%;
     font-size: 100%;
@@ -341,6 +403,9 @@ section p{
     font-size: 100%;
     line-height: 145%;
 }
+
+/* Styles for the brands section */
+
 .brands{
     text-align: center;
 }
@@ -370,7 +435,8 @@ section p{
     color: #fff;
 }
 
-/* HOW IT WORKS COLUMNS */
+/* Styles for the "How it Works" Sections */
+
 .column{
     padding: 25px;
 }
@@ -389,8 +455,10 @@ h4{
     font-weight: 300;
     margin-bottom: 15px;
 }
-
+/* ---------------------------------------------------------------------------------------- */
 /* ICONS */
+/* ---------------------------------------------------------------------------------------- */
+
 .icon-big{
     display: block;
     font-size: 200%;
@@ -398,7 +466,7 @@ h4{
     margin-bottom: 10px;
 }
 
-/* CONTACT */
+/* Styles for "Contact Us" section */
 
 .contact p{
     font-weight: 300;
@@ -420,10 +488,14 @@ h4{
 /* FOOTER */
 /* ---------------------------------------------------------------------------------------- */
 
+/*Footer background */
+
 footer{
     background-color: #333;
     padding: 50px;
 }
+
+/* Footer paragraph style */
 
 footer p{
     color: #888;
@@ -432,6 +504,8 @@ footer p{
     text-align: center;
     margin-top: 30px;
 }
+
+/* Footer list styles */
 
 .footer-contact li{
     border: 0px;
@@ -492,13 +566,21 @@ footer p{
     color: #b18000;
 }
 
+/*------------------------------------------------- */
 /* MAPS */
+/*------------------------------------------------- */
+
 #map {
     width: 100%;
     height: 500px;
 }
 
+/*------------------------------------------------- */
 /* IMAGES */
+/*------------------------------------------------- */
+
+/* Background image for the brands section */
+
 .brand-image{
     margin-top: 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-9.jpg);
@@ -509,12 +591,14 @@ footer p{
     height: 625px;
 }
 
+/* Slideshow images */
+
 .cycle-slideshow img{
     height: auto;
     width: 100%;
 }
 
-
+/* Background image for the hours section */
 
 .hours-image{
     margin-top: 15px;
@@ -526,66 +610,29 @@ footer p{
     height: 500px;
 }
 
-.hours-image li{
-    color: #fff;
-}
+/*------------------------------------------------- */
+/* PROMOTIONS SECTION */
+/*------------------------------------------------- */
 
-.hours-image a{
-    text-decoration: none;
-    color: #ffc631;
-}
+/* Header styles for Promotions section */
 
-.hours-image h3{
-    margin-top: 100px;
-}
-
-.hours-image li:after{
+#promotions h2:after{
     display: block;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0);
+    height: 2px;
+    background-color: #383838;
     content: "";
-    width: 350px;
+    width: 100px;
     margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 15px;
-}
-
-#greg{
-    text-decoration: none;
-    color: #b18000;
-}
-
-#greg:hover{
-    color:#fff;
-}
-
-.contact{
-    text-align: center;
-}
-
-.contact a{
-    text-decoration: none;
-    color: #b18000;
-    
-}
-
-.contact a:hover{
-    color:#383838;
-}
-
-.call-link {
-    text-decoration: none;
-    color: #ffc631;
-}
-
-#promotions {
-    background-color: #ffc631;
+    margin-top: 30px;
 }
 
 .promotion {
     text-align: center;
 }
 
+#promotions {
+    background-color: #ffc631;
+}
 
 .clearance h2:after {
     display: block;
@@ -600,6 +647,10 @@ footer p{
 .clearance p{
     text-align: center;
 }
+
+/*------------------------------------------------- */
+/* BUTTONS */
+/*------------------------------------------------- */
 
 .button{
     text-align: center;
@@ -623,7 +674,10 @@ footer p{
     background-color: #ffc631;
 }
 
+/*------------------------------------------------- */
 /* MODAL */
+/*------------------------------------------------- */
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -689,4 +743,66 @@ footer p{
     .modal-content {
         width: 100%;
     }
+}
+
+/*------------------------------------------------- */
+/* OTHER */
+/*------------------------------------------------- */
+
+/* Styles for "created by Greg Pickart" on the bottom of the page */
+
+#greg{
+    text-decoration: none;
+    color: #b18000;
+}
+
+#greg:hover{
+    color:#fff;
+}
+
+/* Various other link styles */
+
+.contact{
+    text-align: center;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #b18000;
+    
+}
+
+.contact a:hover{
+    color:#383838;
+}
+
+.call-link {
+    text-decoration: none;
+    color: #ffc631;
+}
+
+/* Other "Hours" section styles */
+
+.hours-image li{
+    color: #fff;
+}
+
+.hours-image a{
+    text-decoration: none;
+    color: #ffc631;
+}
+
+.hours-image h3{
+    margin-top: 100px;
+}
+
+.hours-image li:after{
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    content: "";
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
