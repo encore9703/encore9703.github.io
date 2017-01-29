@@ -15,7 +15,7 @@ $(document).ready(function () {
         offset: '60px;'
     });
     
-    /* Sticky Navigation */
+    /* Sticky Navigation 
     $('.js--who-we-are').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
@@ -28,7 +28,7 @@ $(document).ready(function () {
         }
     }, {
         offset: '60px;'
-    });
+    }); */
     
     /* Scroll */
     $('.js--scroll-to-start').click(function () {
@@ -52,7 +52,7 @@ $(document).ready(function () {
     /* Modal */
     var modal = document.getElementById('myModal');
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    /* Get the image and insert it inside the modal - use its "alt" text as a caption */
     var img1 = document.getElementById('firstImg');
     var img2 = document.getElementById('secondImg');
     var img3 = document.getElementById('thirdImg');

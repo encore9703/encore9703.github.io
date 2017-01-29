@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="resources/css/querys.css">
         <link rel="stylesheet" type="text/css" href="resources/css/indexphotogrid.css">
+        <link rel='stylesheet' href='jquery.smartModal.css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         
@@ -50,10 +51,10 @@
             </nav>
             
             <!-- Optional announcement banner at the top -->
-            <!--<div class="announcement">
-                <h1 class="announce">Thanksgiving and Black Friday Clearance</h1>
+            <div class="announcement">
+                <h1 class="announce">Valentine's Clearance</h1>
                 <h2 class="announce-h2"><a href="#promotions">Click to learn more</a></h2>
-            </div> -->        
+            </div>    
             <!-- Main text box with header and sub-header -->
             <div class="hero-text-box">
                 <h1 class="main-header">Encore 9703</h1>
@@ -63,15 +64,14 @@
             <!-- Header arrow button -->
             <div class="main-header-button">
                 <a class="arrow-button js--scroll-to-start" href="#"><img src="resources/css/images/arrow.svg"></a>   
-            </div> 
+            </div>
             
         </header>
         
         <!-- Optional Promotions section for sales or events -->
         <section id="promotions" class="js--promotions">
             <div class="row">
-                <h2>Pre-Valentine's Day Clearance</h2>
-                
+                <h2>Valentine's Day Clearance</h2>
             </div>
             
             <div class="row">
@@ -79,15 +79,9 @@
             </div>
             
             <div class="row promotion">
-                <ul class="home">
+                <ul class="">
                     <li>All clothing 50% off</li>
-                    <li>Handbags, shoes, jewelry 20% off</li>
                 </ul>
-            </div>
-                
-            <div class="row">
-                <br>    
-                <br>    
             </div>
         
         </section>
@@ -119,7 +113,8 @@
             <!-- Image displaying some of the brands carried in the store in two columns -->
             <div class="brand-image">
                 
-                <!-- First column -->
+                <div class="row">
+                    <!-- First column -->
                 <div class="col span 1-of-2 brands-list" id="brands-1">
                     <ul>
                         <li>Calvin Klein</li>
@@ -143,17 +138,15 @@
                         <li>Vince Camuto</li>
                         <li>White House Black Market</li> 
                     </ul>
+                </div>  
                 </div>
             </div>
             
             <!-- Three columns with icons and decriptions to explain how the store works -->
-            <div class="row">
+            <div class="row columns">
             
                 <!-- First column -->
                 <div class="col span-1-of-3 box" id="consult">
-                    
-                    <!-- Icon -->
-                    <i class="ion-ios-cart-outline icon-big" aria-hidden="true"></i>
                     
                     <!-- Title -->
                     <h4>Fashion Consulting</h4>
@@ -165,9 +158,6 @@
                 <!-- Second Column -->
                 <div class="col span-1-of-3 box" id="community">
                     
-                    <!-- Icon -->
-                    <i class="ion-ios-home-outline icon-big" aria-hidden="true"></i>
-                    
                     <!-- Title -->
                     <h4>Women 4 Women</h4>
                     
@@ -177,9 +167,6 @@
                 
                 <!-- Third Column -->
                 <div class="col span-1-of-3 box" id="consign">
-                    
-                    <!-- Icon -->
-                    <i class="ion-ios-pricetags-outline icon-big" aria-hidden="true"></i>
                     
                     <!-- Title -->
                     <h4>Consignment</h4>
@@ -196,7 +183,7 @@
             
             <!-- Title -->
             <div class="row">
-                <h3 class="long-copy">Private parties</h3>
+                <h3 class="private-parties">Private parties</h3>
             </div>
             
             <!-- Description -->
@@ -256,18 +243,13 @@
                 </ul>
 
             </div>
-                        
-        </section>
-        
-        <!-- Button that leads to the online collection page -->
-        <section>
-            <div class="row button">
+            
+            <!-- Button that leads to the online collection page -->
+            <div class="button">
                 <a href="products.html">Browse Our Selection</a>
             </div>
-        </section>
-        
-        <!-- Second grid of images -->
-        <section>
+            
+            <!-- Second grid of images -->
             <div class="row">
                 <ul id="rig">
                     <li>
@@ -313,6 +295,7 @@
                 </ul>
             
             </div>
+            
         </section>
         
         <!-- Hours section -->
@@ -372,8 +355,9 @@
                     <p>Mashpee, MA 02649</p>
                     <br>
                     <p class="phone">(508) 340-1068</p>
-                    <br>
-                    <a target="_blank" href="https://www.facebook.com/encore9703">Find us on Facebook</a> <!-- Link to the Facebook page -->
+                    <a href="mailto:Encore9703image@gmail.com">Encore9703image@gmail.com</a>
+                    <!-- Link to the Facebook page -->
+                    <a target="_blank" href="https://www.facebook.com/encore9703">Find us on Facebook</a> 
                 </div>
             
             </div>
@@ -417,7 +401,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="resources/js/scripts.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
-       <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+        <script src="http://malsup.github.com/jquery.cycle2.js"></script>
                 
     </body>
 

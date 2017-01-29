@@ -133,7 +133,7 @@ header h2{
 
 .announcement{
     background-color: #ffc631;
-    padding: 15px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -144,7 +144,7 @@ header h2{
     color: #383838;
     font-weight: 300;
     font-size: 125%;
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Sub-header text for the announcement */
@@ -153,7 +153,7 @@ header h2{
     text-align: center;
     color: #383838;
     font-weight: 300;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 /* Link text for the announcement */
@@ -190,10 +190,10 @@ header h2{
     margin: 0 0 0 -0.75em;
     position: absolute;
     width: 1.5em;
-    -moz-transition: transform .2s;
-    -ms-transition: transform .2s;
-    -webkit-transition: transform .2s;
-    transition: transform .2s;
+    -moz-transition: transform .1s;
+    -ms-transition: transform .1s;
+    -webkit-transition: transform .1s;
+    transition: transform .1s;
 }
 
 /* Handles the hover animation for the arrow button */
@@ -394,9 +394,16 @@ section li{
 }
 
 /* Section paragraph styles */
-.long-copy{
+.long-copy {
     line-height: 145%;
     font-size: 100%;
+}
+
+.private-parties {
+    font-size: 100%;
+    line-height: 145%;
+    margin-top: 40px;
+    padding: 0px;
 }
 
 section p{
@@ -654,6 +661,8 @@ footer p{
 
 .button{
     text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .button a{
@@ -769,7 +778,9 @@ footer p{
 .contact a{
     text-decoration: none;
     color: #b18000;
-    
+    display: block;
+    margin-top: 20px;
+    font-weight: 300;
 }
 
 .contact a:hover{
@@ -806,3 +817,8 @@ footer p{
     margin-top: 0px;
     margin-bottom: 15px;
 }
+.columns {
+    margin-top: 20px;
+}
+
+
