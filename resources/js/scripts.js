@@ -31,22 +31,17 @@ $(document).ready(function () {
     }); */
     
     /* Scroll */
-    $('.js--scroll-to-start').click(function () {
-        $('html, body').animate({scrollTop: $('.js--who-we-are').offset().top}, 1000);
+    $('.js--logo').click(function () {
+        $('html, body').animate({scrollTop: $('.js--header').offset().top - 80}, 1000);
     });
-    
-    /* Scroll */
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({scrollTop: target.offset().top}, 920);                    
-                    return false;
-                }
-            }
-        });
+    $('.js--about-us').click(function () {
+        $('html, body').animate({scrollTop: $('.js--who-we-are').offset().top - 80}, 1000);
+    });
+    $('.js--hours-link').click(function () {
+        $('html, body').animate({scrollTop: $('.js--hours').offset().top}, 1000);
+    });
+    $('.js--contact-link').click(function () {
+        $('html, body').animate({scrollTop: $('.js--contact-us').offset().top}, 1000);
     });
     
     /* Modal */
