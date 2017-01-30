@@ -43,6 +43,8 @@ div {
 
 section{
     padding: 80px 0;
+    position: relative;
+    z-index: 1000;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -51,9 +53,11 @@ section{
 
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-1.jpg);
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 /* Smaller header, not in use */
@@ -77,7 +81,7 @@ header{
 /* Main header text box */
 
 .hero-text-box{
-    position: absolute;
+    position: fixed;
     width: 1140px;
     top: 50%;
     left: 50%;
@@ -134,7 +138,10 @@ header h2{
 .announcement{
     background-color: #ffc631;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 150px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 /* Main text for the announcement */
@@ -207,6 +214,13 @@ header h2{
 /* ---------------------------------------------------------------------------------------- */
 
 /* Header logo, white */
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+}
 
 .logo{
     height: 100px;
@@ -596,6 +610,7 @@ footer p{
     width: 100%;
     box-sizing: border-box;
     height: 625px;
+    background-attachment: fixed;
 }
 
 /* Slideshow images */
@@ -623,6 +638,10 @@ footer p{
 
 /* Header styles for Promotions section */
 
+#promotions h2 {
+    padding-top: 40px;
+}
+
 #promotions h2:after{
     display: block;
     height: 2px;
@@ -635,10 +654,18 @@ footer p{
 
 .promotion {
     text-align: center;
+    background-color: #ffc631;
+}
+
+.promotion ul {
+    padding-bottom: 40px;
 }
 
 #promotions {
-    background-color: #ffc631;
+    position: relative;
+    top: -80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .clearance h2:after {
@@ -822,3 +849,9 @@ footer p{
 }
 
 
+
+
+
+#who-we-are {
+    padding-top: 0px;
+}
