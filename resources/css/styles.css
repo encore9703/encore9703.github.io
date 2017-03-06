@@ -45,6 +45,7 @@ section{
     padding: 80px 0;
     position: relative;
     z-index: 1000;
+    background-color: white;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -52,31 +53,23 @@ section{
 /* ---------------------------------------------------------------------------------------- */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-1.jpg);
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
+    overflow: hidden;   
+    position: relative;
+    padding-bottom: 80vh;
 }
 
-/* Smaller header, not in use */
+/* Main header background image */
 
-/* .small-header{
-        -moz-transition: background-color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease;
-		-ms-transition: background-color 0.2s ease;
-		transition: background-color 0.2s ease;
-		background: #2e3842;
-		height: 3em;
-		left: 0;
-		line-height: 3em;
-		position: fixed;
-		top: 0;
-		width: 100%;
-        box-sizing: border-box;
-		z-index: 10000;
-} */
+header::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-1.jpg) no-repeat center center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+}
 
 /* Main header text box */
 
@@ -297,7 +290,7 @@ nav {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgba(56, 56, 56, 0.98);
+    background-color: #565656;
     box-shadow: 0  2px 2px #c1c1c1;
     z-index: 9999;
 }
@@ -597,7 +590,7 @@ footer p{
 }
 
 /*------------------------------------------------- */
-/* IMAGES */
+/* BACKGROUND IMAGES
 /*------------------------------------------------- */
 
 /* Background image for the brands section */
@@ -606,18 +599,12 @@ footer p{
     margin-top: 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/encore-9.jpg);
     background-size: cover;
+    -webkit-transform: translate3d(0,0,0);
     background-position: center;
     width: 100%;
     box-sizing: border-box;
     height: 625px;
-    background-attachment: fixed;
-}
-
-/* Slideshow images */
-
-.cycle-slideshow img{
-    height: auto;
-    width: 100%;
+    background-attachment: scroll;
 }
 
 /* Background image for the hours section */
@@ -633,7 +620,7 @@ footer p{
 }
 
 /*------------------------------------------------- */
-/* PROMOTIONS SECTION */
+/* PROMOTIONS SECTION
 /*------------------------------------------------- */
 
 /* Header styles for Promotions section */
@@ -712,78 +699,7 @@ footer p{
 }
 
 /*------------------------------------------------- */
-/* MODAL */
-/*------------------------------------------------- */
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 80px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    height: 90%;
-    max-width: 700px;
-    cursor: pointer;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-/*------------------------------------------------- */
-/* OTHER */
+/* OTHER
 /*------------------------------------------------- */
 
 /* Styles for "created by Greg Pickart" on the bottom of the page */
@@ -851,4 +767,8 @@ footer p{
 
 #who-we-are {
     padding-top: 0px;
+}
+
+.about-header {
+    padding-top: 40px;
 }
