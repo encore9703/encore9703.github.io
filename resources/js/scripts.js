@@ -1,7 +1,9 @@
 $(document).ready(function () {
+        
+    
     
     /* Sticky Navigation With Promotions Section */
-    /* $('.js--promotions').waypoint(function (direction) {
+    $('.js--promotions').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
             $('hero').addClass('gone');
@@ -13,9 +15,9 @@ $(document).ready(function () {
         }
     }, {
         offset: '60px;'
-    }); */
+    });
     
-    /* Sticky Navigation Without Promotions Section */
+    /* Sticky Navigation Without Promotions Section 
     $('.js--who-we-are').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
@@ -27,8 +29,8 @@ $(document).ready(function () {
             $('button').removeClass('gone');
         }
     }, {
-        offset: '110px;'
-    });
+        offset: '80px;'
+    }); */
     
     /* Scroll */
     $('.js--logo').click(function () {
